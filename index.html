@@ -1,0 +1,258 @@
+<html>
+<head>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:FF9F9F;
+  color: white;
+}
+body {
+  background-image: url('wallpaper.jpg');
+}
+</style>
+</head>
+
+<body>
+<body align="center">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale="1.0" />
+
+
+<link rel="stylesheet" href="style.css">
+<title>Home</title>
+</head>
+
+
+<body>
+
+<div class="menu_bar">
+<h1 class="logo"> Sunshine<span>Stationery</span><h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>
+<a href="brands.html">Brands<i class="fas fa-caret-down"></i> </a>
+<div class="dropdown_menu">
+
+
+<li><a href="category.html">Category<i class="fas fa-caret-down"></i> </a>
+<div class="dropdown_menu">
+
+<li><a href="collections.html">Collections</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+
+<br>
+<br>
+<br>
+<style>
+<body>
+
+
+<h2 align="center"><img src="sunshine.jpg"
+<div class="container">
+<br>
+<br>
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: center;
+  top: 80%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: F26565;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: salmon;
+}
+.numbertext {
+  color:#CD5C5C;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  font-size:25px;
+  background-color: salmon;
+  padding: 10px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 14%;
+}
+.demo {
+  opacity: 0.1;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h1 align="center"><img src="sunshine.jpg"></h1>
+
+<h2 align="center"><i><b><style="font-size:90px"><font color=#CD5C5C>Your Best Partner for Stationery</font></h2><i><b>
+
+ <div class="container">
+ <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="stabillo.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="artline.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="highlight.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="kurecolour.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="fabercastle.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="notebook.jpg">
+	
+	
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+<div class="caption-container">
+    <p id="caption"></p>
+  
+</div>
+
+ <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="stabillo.jpg" onclick="currentSlide(1)" alt="Stabilo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="artline.jpg" onclick="currentSlide(2)" alt="Artline">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="highlight.jpg"" onclick="currentSlide(3)" alt="Highlight">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="kurecolour.jpg"  onclick="currentSlide(4)" alt="Kurecolour">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="fabercastle.jpg"   onclick="currentSlide(5)" alt="Faber Castell">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="notebook.jpg" s onclick="currentSlide(6)" alt="Notebook ">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+<h3>Background Sound (Autoplay Enable)</h3>
+<embed src="joy.mp3" hidden="true"> Joy - Joy <volume= "40"></embed>
+<br>
+<br>
+<br>
+<footer>
+  <p>Copyright by Sunshine Stationery | This website is designed for IMS 456 <br> Best Viewed Google Chrome | Last Update : January 2022</a></p></footer>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+</html>
